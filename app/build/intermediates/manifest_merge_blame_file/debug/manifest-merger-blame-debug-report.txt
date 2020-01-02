@@ -1,0 +1,83 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.dotranbaolam.ailatrieuphu"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:5:5-79
+11-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:6:5-67
+12-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:6:22-64
+13
+14    <application
+14-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:8:5-32:19
+15        android:allowBackup="true"
+15-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:9:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.0.1] C:\Users\HP\.gradle\caches\transforms-2\files-2.1\72b2b92ec4ab73ff21fb9bc348de3b22\core-1.0.1\AndroidManifest.xml:22:18-86
+17        android:debuggable="true"
+18        android:icon="@mipmap/ic_launcher"
+18-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:10:9-43
+19        android:label="@string/app_name"
+19-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:11:9-41
+20        android:networkSecurityConfig="@xml/network_security_config"
+20-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:12:9-69
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:13:9-54
+22        android:supportsRtl="true"
+22-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:14:9-35
+23        android:testOnly="true"
+24        android:theme="@style/AppTheme" >
+24-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:15:9-40
+25        <activity android:name="com.dotranbaolam.ailatrieuphu.MuaCredit" />
+25-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:16:9-56
+25-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:16:19-44
+26        <activity android:name="com.dotranbaolam.ailatrieuphu.LuatChoi" />
+26-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:17:9-46
+26-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:17:19-43
+27        <activity android:name="com.dotranbaolam.ailatrieuphu.BieuDoTroGiupKhanGia" />
+27-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:18:9-58
+27-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:18:19-55
+28        <activity android:name="com.dotranbaolam.ailatrieuphu.CauHoi" />
+28-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:19:9-44
+28-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:19:19-41
+29        <activity android:name="com.dotranbaolam.ailatrieuphu.LinhVuc" />
+29-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:20:9-45
+29-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:20:19-42
+30        <activity android:name="com.dotranbaolam.ailatrieuphu.ChonLinhVuc" />
+30-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:21:9-49
+30-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:21:19-46
+31        <activity android:name="com.dotranbaolam.ailatrieuphu.ManHinhChinh" />
+31-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:22:9-50
+31-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:22:19-47
+32        <activity android:name="com.dotranbaolam.ailatrieuphu.DangKyTaiKhoan" />
+32-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:23:9-52
+32-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:23:19-49
+33        <activity android:name="com.dotranbaolam.ailatrieuphu.QuenMatKhau" />
+33-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:24:9-49
+33-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:24:19-46
+34        <activity android:name="com.dotranbaolam.ailatrieuphu.MainActivity" >
+34-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:25:9-31:20
+34-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:25:19-47
+35            <intent-filter>
+35-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:26:13-30:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:27:17-69
+36-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:27:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:29:17-77
+38-->D:\LapTrinhDiDong-Android\DoAn_Android\app\src\main\AndroidManifest.xml:29:27-74
+39            </intent-filter>
+40        </activity>
+41    </application>
+42
+43</manifest>
