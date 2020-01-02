@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LuatChoi">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="180dp"
+                android:text="HƯỚNG DẪN"
+                android:textColorHint="#00C90D0D"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="388dp"
+                android:layout_height="645dp"
+                android:text="Mỗi lượt chơi gồm có 4 lĩnh vưc.Mỗi lĩnh vực gồm có 15 câu.Trả lời đúng 1 câu sẽ nhận được số điểm tương ứng với câu hỏi đã đưa ra.Nếu trả lời sai 1 câu sẽ trừ đi 1 mạng tương ứng với sô lượt chơi đã quy định.Số lượt chơi trong tối đa 5 lần, nếu mất đi 5 lượt chơi nó trò chơi sẽ dừng lại và kết thúc.Trong trò chơi có 4 quyền trợ giúp đó là: 50:50(bỏ đi 2 phương án sai), trợ giúp hỏi ý kiến khán giả(sẽ đưa ra đáp án chính xác với mức cao nhất), quyền trợ giúp gọi điện thoại (cho phép tối đa 30 giây để hỏi ý kiến để đưa ra đáp án chính xác nhất)"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
