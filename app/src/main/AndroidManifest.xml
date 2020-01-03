@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MuaCredit"></activity>
+        <activity android:name=".DangKy"></activity>
+        <activity android:name=".MuaCredit" />
         <activity android:name=".LuatChoi" />
         <activity android:name=".BieuDoTroGiupKhanGia" />
         <activity android:name=".CauHoi" />

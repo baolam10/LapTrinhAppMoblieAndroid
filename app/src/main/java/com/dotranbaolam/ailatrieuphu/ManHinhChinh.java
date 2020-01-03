@@ -78,4 +78,9 @@ public class ManHinhChinh extends AppCompatActivity {
             }
         }.execute("lay-thong-tin", "GET", token);
     }
+
+    public void MuaCredit(View view) {
+        Intent intent = new Intent(this,MuaCredit.class);
+        startActivity(intent);
+    }
 }

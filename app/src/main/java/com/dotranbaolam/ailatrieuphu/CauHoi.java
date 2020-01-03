@@ -7,7 +7,9 @@ import androidx.loader.app.LoaderManager;
 import androidx.loader.content.Loader;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -23,6 +25,7 @@ import java.util.ArrayList;
 public class CauHoi extends AppCompatActivity implements LoaderManager.LoaderCallbacks<String>  {
     private Button btn_Caua, btn_Caub, btn_Cauc, btn_Caud;
     private TextView txt_Noidung;
+    TextView txt_thoigian;
 
     private final ArrayList<cls_CauHoi> cauHoiArrayList = new ArrayList<>();
     @Override
@@ -41,6 +44,23 @@ public class CauHoi extends AppCompatActivity implements LoaderManager.LoaderCal
             getSupportLoaderManager().initLoader(0, null, this);
         }
         getSupportLoaderManager().restartLoader(0, null, this);
+
+        //Thời gian
+        txt_thoigian = (TextView)findViewById(R.id.textView4);
+        CountDownTimer countDownTimer;
+        countDownTimer = new CountDownTimer(30000,1000) {
+            @Override
+            public void onTick(long l) {
+                txt_thoigian.setText(String.valueOf(l/1000));
+            }
+
+            @Override
+            public void onFinish() {
+                txt_thoigian.setText("Hết Giờ");
+
+            }
+        };
+        countDownTimer.start();
     }
     @NonNull
     @Override
@@ -51,7 +71,9 @@ public class CauHoi extends AppCompatActivity implements LoaderManager.LoaderCal
     @Override
     public Loader<String> onCreateLoader(int id, @Nullable Bundle args)
     {
-        return new CauHoiLoader(this);
+        Intent intent = getIntent();
+        int lv_id = intent.getIntExtra("Id_linh_vuc",0);
+        return new CauHoiLoader(this,lv_id);
     }
 
     @Override

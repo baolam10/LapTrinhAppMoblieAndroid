@@ -2,6 +2,7 @@ package com.dotranbaolam.ailatrieuphu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import android.net.ConnectivityManager;
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +10,7 @@ import android.content.SharedPreferences;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.view.View;
+
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -20,24 +22,28 @@ public class MainActivity extends AppCompatActivity {
     private SharedPreferences mPref;
     private String sharePrefFile = "com.dotranbaolam.ailatrieuphu";
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         mPref = getSharedPreferences(sharePrefFile, MODE_PRIVATE);
 
         //Kiểm tra Token trong Shared Preferences
         //Nếu có Token thì chuyển qua màn hình Chính
 
-        String token = mPref.getString("TOKEN",null);
-        if(token != null)
-        {
+        String token = mPref.getString("TOKEN", null);
+        int id = mPref.getInt("id",0);
+        if (token != null) {
             //Mở activity màn hình chính
-            Intent intent = new Intent(this,ManHinhChinh.class);
+            Intent intent = new Intent(this, ManHinhChinh.class);
             startActivity(intent);
         }
     }
+
 
     public void dangNhap(View view)
     {
@@ -94,4 +100,9 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Khong the ket noi den server", Toast.LENGTH_SHORT).show();
             }
         }
+
+    public void Dangky(View view) {
+        Intent intent = new Intent(this,DangKy.class);
+        startActivity(intent);
     }
+}
